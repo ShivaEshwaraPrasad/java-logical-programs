@@ -1,10 +1,10 @@
-//duplicate means repeated numbers
+//Write a JAVA program to count total number of duplicate elements in an array
 import java.util.Scanner;
-class Arrayduplicate
+class ArrayCountduplicate
 {
   public static void main(String args[])
   {
-    int i;
+    int i,sum=0;
  Scanner sc=new Scanner(System.in);
   System.out.println("enter array size ");
     int n=sc.nextInt();
@@ -36,8 +36,14 @@ class Arrayduplicate
           
         }
       }
+         
          if(count!=1)
-          System.out.println("dupicate elements:"+a[i]);
+          System.out.println( a[i] + "\t" +count);
+         sum++;
        }
+    System.out.println("The total number of duplicate elements:"+sum);
+         
+         
+       
   }
 }
